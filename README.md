@@ -4,12 +4,12 @@ This module joins a list of GCP projects to a shared metrics scope in [GCP](http
 
 ## Joining A Program's Shared Metrics Scope
 
-In order to join a project to a shared metrics scope, declare a module like below... The module accepts a list of projects in case more than one need to be added from a repo.
+In order to join one or more projects to a shared metrics scope, declare a module like below... 
 
 ```terraform
 module "join_metrics_scope" {
   source                 = "ammilam/join-metrics-scope/google"
-  version                = "0.1.1"
+  version                = "0.1.2"
   metrics_scope_project  = module.monitoring_workspace.project_id # ref to metrics scope created as detailed above
-  monitored_projects     = [""] # enter ref to project(s) needing to be monitored
+  monitored_projects     = ["project1", "project2"] # enter ref to project(s) needing to be monitored
 ```
