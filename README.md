@@ -1,8 +1,8 @@
-# Join Metrics Scope Module
+# Join Google Metrics Scope
 
 This module joins a list of GCP projects to a shared metrics scope in [GCP](https://cloud.google.com/).
 
-## Joining A Program's Shared Metrics Scope
+## Joining A Google Shared Metrics Scope
 
 In order to join one or more projects to a shared metrics scope, declare a module like below... 
 
