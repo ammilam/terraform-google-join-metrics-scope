@@ -8,7 +8,8 @@ In order to join a project to a shared metrics scope, declare a module like belo
 
 ```terraform
 module "join_metrics_scope" {
-  source                 = ""
+  source                 = "ammilam/join-metrics-scope/google"
+  version                = "0.1.1"
   metrics_scope_project  = module.monitoring_workspace.project_id # ref to metrics scope created as detailed above
   monitored_projects     = [""] # enter ref to project(s) needing to be monitored
 ```
